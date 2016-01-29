@@ -1,4 +1,13 @@
 # OASIS_START
+# DO NOT EDIT (digest: 05f19c916d81fa9df27b4deaec4052cf)
+version = "109.15.01"
+description = "Syntax extension for Variantslib"
+requires = "camlp4 type_conv variantslib"
+archive(syntax, preprocessor) = "pa_variants_conv.cma"
+archive(syntax, toploop) = "pa_variants_conv.cma"
+archive(syntax, preprocessor, native) = "pa_variants_conv.cmxa"
+archive(syntax, preprocessor, native, plugin) = "pa_variants_conv.cmxs"
+exists_if = "pa_variants_conv.cma"
 # OASIS_STOP
 package "syntax" (
   description = "Alias for pa_variants_conv"
